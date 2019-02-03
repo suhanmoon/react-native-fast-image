@@ -103,6 +103,7 @@ class FastImageViewConverter {
                 break;
         }
         return new RequestOptions()
+                .dontTransform()
                 .diskCacheStrategy(diskCacheStrategy)
                 .onlyRetrieveFromCache(onlyFromCache)
                 .skipMemoryCache(skipMemoryCache)
